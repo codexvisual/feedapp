@@ -1,0 +1,41 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <include layout="@layout/header_afterlogin" android:id="@+id/indlay"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="40dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/feedlist"
+            android:layout_below="@+id/indlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/takepic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+
+        android:src="@mipmap/cambtn" />
+
+    <include
+        android:id="@+id/footertab" layout="@layout/footer" />
+</RelativeLayout>
+

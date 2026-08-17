@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">feed</string>
+    <string name="strSelectedDate">Select Date</string>
+
+</resources>

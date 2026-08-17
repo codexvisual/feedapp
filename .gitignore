@@ -1,0 +1,5 @@
+bin/
+gen/
+build/
+*.class
+.DS_Store

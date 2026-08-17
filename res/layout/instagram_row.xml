@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="#FFF"
+
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="1.3"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="70dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_weight="0.5"
+                android:gravity="center|left"
+android:orientation="horizontal"
+                android:layout_height="fill_parent">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/propic"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+                <TextView
+                    android:id="@+id/yourName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:text="Nirbhay Pratap Singh"/>
+                <TextView
+                    android:id="@+id/sharetxtColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#e21e1e"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:text="Share by"/>
+                <TextView
+                    android:id="@+id/sharetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#000"
+                    android:visibility="gone"
+                    android:textSize="15dp"
+
+                    android:text="Nirbhay Pratap Singh"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_weight="1.5"
+                android:gravity="center|right"
+
+                android:layout_height="fill_parent">
+                <TextView
+                    android:id="@+id/tmNow"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="1 m"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/statustxt"
+            android:layout_width="fill_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#000"
+            android:text="This is my status posrt!"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/feeimg"
+                android:layout_width="fill_parent"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+
+
+
+                android:src="@drawable/bridal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="1.3"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_height="90dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center|left"
+                    android:layout_marginTop="4dp"
+
+                    android:paddingLeft="40dp"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone"
+                        android:layout_margin="4dp"
+                        android:src="@mipmap/like_ic"/>
+
+                    <com.like.LikeButton
+                        android:id="@+id/likebtn"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        app:icon_type="heart"
+                        app:circle_start_color="@color/colorPrimary"
+
+                        app:unlike_drawable="@mipmap/like_ic"
+                        app:dots_primary_color="@color/colorAccent"
+                        app:dots_secondary_color="@color/colorPrimary"
+                        app:circle_end_color="@color/colorAccent"
+                        app:icon_size="20dp"
+
+                        app:anim_scale_factor="2"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="8dp"
+                        android:src="@mipmap/text_bubble"/>
+                    <ImageView
+                        android:id="@+id/sharebtn"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="8dp"
+                        android:src="@mipmap/share"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1.4"
+                    android:gravity="center|right"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:id="@+id/menuopt"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+
+                        android:src="@mipmap/menus"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#979797"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="fill_parent">
+
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="14dp"
+                    android:background="@mipmap/liked"
+
+                    android:layout_marginLeft="40dp"/>
+                <TextView
+                    android:id="@+id/likecouter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:text="250"
+
+                    />
+                <TextView
+                    android:id="@+id/lastCommentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Like Image"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
